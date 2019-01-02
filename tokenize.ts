@@ -11,7 +11,7 @@ const Tokenize = (input: string): Token[] => {
             tokens.push(new Token(match[1], Type.String));
             index += match[0].length;
         // Matches an indentifier, can include ' _ or $
-        } else if (match = /^[a-zA-Z'_$]+/.exec(slice)) {
+        } else if (match = /^[a-zA-Z'_$\.]+/.exec(slice)) {
             tokens.push(new Token(match[0]));
             index += match[0].length;
         // Matches an integer

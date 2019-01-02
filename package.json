@@ -11,6 +11,7 @@
         "start": "tsc *.ts; node index.js"
     },
     "dependencies": {
+        "kuler": "^1.0.1",
         "typescript": "^3.2.2"
     }
 }

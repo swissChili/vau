@@ -1,7 +1,11 @@
 import { Tokenize } from "./tokenize"
+import { debugTokens } from "./debug"
+import { Parse } from "./parse"
 
 let tokens = Tokenize(`
-(a "b" 123)
-('foo (bar baz) quux)`);
 
-console.log(tokens);
+(console.log "foo bar baz")
+
+`);
+
+console.log(Parse(tokens));

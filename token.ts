@@ -2,8 +2,8 @@ enum Type {
     String = "STRING",
     Num = "NUM",
     Ident = "IDENT",
-    OpenParen = "(",
-    CloseParen = ")"
+    OpenParen = "OPEN",
+    CloseParen = "CLOSE"
 }
 
 class Token {
