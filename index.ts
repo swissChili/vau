@@ -5,8 +5,9 @@ import { Context, reserved } from "./context"
 
 let tokens = Tokenize(`
 
+;; Hello World Program
 (def name "Pete Mondelo")
-(def greet (lambda name
+(def greet (lambda (name)
     (print "Hello," name)))
 (greet name)
 

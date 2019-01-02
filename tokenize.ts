@@ -10,6 +10,9 @@ const Tokenize = (input: string): Token[] => {
         if (match = /^"([^"]*)"/.exec(slice)) {
             tokens.push(new Token(match[1], Type.String));
             index += match[0].length;
+        // Matches a comment
+        } else if (match = /^;[^\n]*\n/.exec(slice)) {
+            index += match[0].length
         // Matches an indentifier, can include ' _ or $
         } else if (match = /^[a-zA-Z'_$\.]+/.exec(slice)) {
             tokens.push(new Token(match[0]));
