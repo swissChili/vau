@@ -1,0 +1,16 @@
+{
+    "name": "wisp",
+    "version": "0.1.0",
+    "description": "A lisp dialect for the web",
+    "main": "index.js",
+    "repository": "git@github.com:swissChili/wisp.git",
+    "author": "swissChili",
+    "license": "GPL-3.0",
+    "private": false,
+    "scripts": {
+        "start": "tsc *.ts; node index.js"
+    },
+    "dependencies": {
+        "typescript": "^3.2.2"
+    }
+}
