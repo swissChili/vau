@@ -1,11 +1,16 @@
 import { Tokenize } from "./tokenize"
 import { debugTokens } from "./debug"
 import { Parse } from "./parse"
+import { Context, reserved } from "./context"
 
 let tokens = Tokenize(`
 
-(console.log "foo bar baz")
+(def name "Pete Mondelo")
+(def greet (lambda name
+    (print "Hello," name)))
+(greet name)
 
 `);
 
-console.log(Parse(tokens));
+let ctx = new Context({});
+ctx.interpret(Parse(tokens));
