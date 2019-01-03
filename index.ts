@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Tokenize } from "./tokenize"
 import { debugTokens } from "./debug"
 import { Parse } from "./parse"
@@ -21,5 +23,5 @@ if (process.argv.length > 2) {
 } else {
     error('No file specified',
 `Usage:
-wisp [file.wisp]`);
+vau [file.vau]`);
 }

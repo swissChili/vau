@@ -3,7 +3,7 @@
 ;; def keyword again
 (def name "richard stallman")
 
-;; everything in wisp follows the
+;; everything in vau follows the
 ;; same syntactical rules. Funcs
 ;; consist of an indentifier and
 ;; a finite number of params. They

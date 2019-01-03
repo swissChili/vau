@@ -1,5 +1,7 @@
-# wisp
-A lisp dialect for the web
+# vau
+A lisp dialect written in TypeScript.
+
+Pronounced like 'vow'.
 
 ## demo
 
@@ -28,8 +30,8 @@ yarn run v1.12.3
 $ tsc; node index.js
  ERR  No file specified
       Usage:
-      wisp [file.wisp]
+      vau [file.vau]
 Done in 2.07s.
 
-$ node index.js hello.wisp
+$ node index.js hello.vau
 ```

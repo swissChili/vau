@@ -1,5 +1,5 @@
 {
-    "name": "wisp",
+    "name": "vau",
     "version": "0.1.0",
     "description": "A lisp dialect for the web",
     "main": "index.js",
@@ -9,11 +9,16 @@
     "private": false,
     "scripts": {
         "start": "tsc; node index.js",
-        "stop": "rm *.{js,js.map}"
+        "stop": "rm *.{js,js.map} lib/*.{js,js.map}",
+        "build": "tsc",
+        "preinstall": "tsc"
     },
     "dependencies": {
         "@types/node": "^10.12.18",
         "kuler": "^1.0.1",
         "typescript": "^3.2.2"
+    },
+    "bin": {
+        "vau": "./index.js"
     }
 }
