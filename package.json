@@ -8,9 +8,10 @@
     "license": "GPL-3.0",
     "private": false,
     "scripts": {
-        "start": "tsc *.ts; node index.js"
+        "start": "tsc *.ts lib/*.ts; node index.js"
     },
     "dependencies": {
+        "@types/node": "^10.12.18",
         "kuler": "^1.0.1",
         "typescript": "^3.2.2"
     }

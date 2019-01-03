@@ -1,5 +1,6 @@
 import { Type, Token } from "./token"
 import { error } from "./error"
+import { stdlib } from "./lib"
 
 const reserved = {
     lambda: (input, context: Context) => {
@@ -67,7 +68,16 @@ class Context {
         } else if (input.type === Type.Ident) {
             // This will always be a string but the cast
             // is required to tsc doesn't throw a fit.
-            return this.get(String(input.value));
+
+            // Split at dots, foo.bar.baz will access [foo][bar][baz]
+            // on the actual object
+            let ns = String(input.value).split('.');
+            let s = ns.shift();
+            let current = this.get(s);
+            for (let n of ns) {
+                current = current[n];
+            }
+            return current;
         } else {
             return input.value;
         }
