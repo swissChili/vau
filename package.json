@@ -1,6 +1,6 @@
 {
     "name": "vau",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A lisp dialect for the web",
     "main": "index.js",
     "repository": "git@github.com:swissChili/vau.git",
@@ -19,6 +19,6 @@
         "typescript": "^3.2.2"
     },
     "bin": {
-        "vau": "./bin/index.js"
+        "vau": "./dist/index.js"
     }
 }
