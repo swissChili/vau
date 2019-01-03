@@ -1,6 +1,6 @@
 {
     "name": "vau",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A lisp dialect for the web",
     "main": "index.js",
     "repository": "git@github.com:swissChili/vau.git",
